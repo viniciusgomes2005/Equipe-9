@@ -4,39 +4,39 @@
         <title>Alprof</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href="../css/reset.css" media="screen" />
+        <link rel="stylesheet" href="../css/style.css" media="screen" />
     </head>
     <body>
         <header>
             <h1>ALPROF</h1>
         </header>
         <main>
-            
-            <ul>
-                <li>
+            <ul class="flex-container">
+                <li class="flex-box">
                     <h2>Feedbacks</h2>
-                    <a href="pages/feedbacks.html"><img src="https://fakeimg.pl/100x100" alt="class image"></a>
                     <p>Sugestões e opiniões dos alunos para melhorar a aula</p>
                 </li>
-                <li>
+                <li class="flex-box">
                     <h2>Professores</h2>
-                    <a href="pages/professores.html"><img src="https://fakeimg.pl/100x100" alt="professor image"></a>
                     <p>Procure professores para trocar experiências para melhorar sua aula</p>
                 </li>
-                <li>
-                    <img src="data:image/png;base64,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" alt="black circle image" width="10" height="10">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Circle-image.svg/2048px-Circle-image.svg.png" width="10" height="10">
-                </li>
-            </ul>
-            <h1>Foruns <a href="foruns.html">-></a></h1>  
-            <ul>
                 
-                <li><a href="pages/forum1.html"><img src="https://fakeimg.pl/50x50" alt="home image"></a></li>
-                <li><a href="pages/forum2.html"><img src="https://fakeimg.pl/50x50" alt="chat image"></a></li>
-                <li><a href="pages/forum3.html"><img src="https://fakeimg.pl/50x50" alt="profile image"></a></li>
+            </ul>
+            <figure>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAbFBMVEUAAAD////09PTr6+vm5ubx8fHPz8/8/Pw6OjpMTEzi4uKOjo4yMjKAgIDLy8uurq5kZGS/v7/b29unp6c/Pz8iIiInJyeUlJSbm5tUVFTGxsZra2t6enpZWVlwcHAlJSUZGRk1NTUNDQ2IiIgV3BThAAAGZElEQVR4nO2d23biOgxAk0C4QyFchgLtUPr//3hgKAcosiM5smUl2Y99qfciUSRf5CStO4n0ALzTGuqnNdRPa6if1lA/raF+WkP9tIb6aQ31E9Cwn+V5Z1SMOnme9cP92wCGo91yPB9Mjskjx8lgPl7uRv7/vVfDfLfdTxI7k/12l/schDfDztthUyJ3Z3N46/gaiB/D3rjspwN+zHHPy1g8GM4OZLsbnzv+4XAbFlNnvX+cvgvmEbEaZkv6w/nKZJlxDorRsHB/On9z6PINi81wNmTzu/A+4xoYk2GP1+/CismRxdCD3z9Hls8Hg2H3w4vfhQ+G97GyYb/i56GEaeUcvarhm1e/C2+ihl0/L+Azw2qPaiXDPwH8LvwRMuysAgmeo2qFysPd0P8b+Ij72+hsOA8qmCTzwIbddWDBJFk7Bhw3w0VwvwuLcIZjEUHHmOpiuBcSTJJ9EMN+iK+8iSE9iSMbZuFjzCNrcv1PNcyPooJJcqROrhINO8J+F4j5Dc0wBkGqIskwl3b7gfSgUgyzo7TaD6RwQzDs/5U2+58N4aNBMJT8Dv5m6MPwU9rqiU9+w1D1PBZ0joo1lKkmbGArDaRhV9oHAFkvIg3jCaN3NpyGcvWSDVwthTIMO+mEBzU9hTGMJVl7BZO+YQzDzYtSWfEYbqU9LGw5DGP8UNwp/2SUG8aUjr5SnqCWGsYaR2+UxtMyw760QSllhVSZod8VXg6m1QzjDjNXSoJNieG79PARfFQxnEmPHoV9443dcCA9eBQDd8Od9NiRWPdsWg3jTUifsaanNsOe9MjR2LaH2Qw1BNIr726GI+lxE7CcarAY8m2I9c/BxTCTHjUJ80qG2XApPWgSSwdDjk3p4fiiGxbSYyZiPMRgNIy/bHrGWEQZDaVHTIZqqCefuWHKa0yGmj6GV0yfRJOh9HgdoBnqe0iNj6nBMLYVXwyGVWGDoY7i/hlDlQgbxrvaZANeiYIN41u1xwCv7MOG2hKaK3BaAxvqyrpvTPCGukrDO2CRCBrqmAh+BfwigoYxr/raAFeEQcM4N5eUA252Aw2/pIfqyBfaUHqkzmANtU1g3IGmTSFDraEUXmeDDHXNIz4CzSlChlIHt6ozRhqGPjzJB3QMEzLUWBxegVaDIUN896PYgDbVAob9k/RAnTkB24cAQ62VxQWgugAMdU5hXAEmMgDDOA6ouYEz1LDTywSwAwww1LR+/xsgMQUM9Sbe4CoiYKhxRv8GzrD+v2H938P6x9L6f/Hrb1j/vFRzbfFq08z6sAE1fv3naeo/11b/+VIthxBewc556029oS2YzVx7UrpRgbJ+qHUNGGxB0NB1fK0LiPi9GFqrC/x+GqWhhrAnqgH72uq/N1HnRAZlf6ma06OPkPYIqyygaPu8Nc7s0/bqa0y+TSaGv8fVYQ+DqQufyVBfFWzqrNDcs2vq0hr6+UNt0ZR+hlTZzLe5xWCTz3LrKhJdzuOrijWWZlEWQ017oywtvm29TfzdVMWNrVVUs/vTRN5Q8I61taDVUMuPaL2Bzt7rS0epb+8OWYd+bfZLBGvQc8/WJKrcUMMOsGp9ExUkNhV7Xzagf2n9e9DG/tln6CMcebDh6AUd9YowSz/vmDMbpp7sEReKXH31o42nbHcjxLpbEXdxp+I7Sv7iht7eM3MjvpV95ruC4uv+xX7fU2wrih7u7IorQfVy71raj2etxtPdedKXrN45err/MJ6NRN7usIwlQ/V4D2kcil7vko3gPuC15/uAz+FGNqJuvN/p3IB7uVPJ7AafyVQzFMtR0bloZUOhSgNbTXAYpt3w6c0aWQ8yGYaf2MBNWXAaBp6eQk06MRumnXDzqCtiHsNkGC6mOsVQFsO0G+LrP3QMMSyGId5G9zeQxzDN/K4ST8l5KLvh+VH1tzvso9oDymWYpj0/UXVo30aChMUwTWf8IYfHj82Q3fGDyY/RME0LvqrqwPD+3WA0PMfVJcfh082ycvx8hNXwTFHx43Gasj2eP3Abnpm53zO0t9636YYHwzO9Mb2Lz2rM/etd8WN4Jl9M8S/lZLqgThKi8WZ4IZ9t92WTj5v9dsYaWX7j1fBKsdh+zweb5w5ip81g/r1dGE8r8RHA8Id+lne6o6IoRt1OntHnPV0JZyhFa6if1lA/raF+WkP9tIb6aQ310xrqpzXUT/0N/wMmYHZ/aBZojgAAAABJRU5ErkJggg==" alt="black circle image" width="10" height="10">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Circle-image.svg/2048px-Circle-image.svg.png" width="10" height="10">
+            </figure>
+            <h1 class="foruntitle">Fóruns <a href="foruns.html"><img src="https://cdn-icons-png.flaticon.com/128/6407/6407362.png" alt="arrow" class="arrowbutton"></a></h1>
+            <ul class="foruns">
+                <li class="forum"><a href="pages/forum1.html"><img src="https://fakeimg.pl/50x50" alt="home image"></a></li>
+                <li class="forum"><a href="pages/forum2.html"><img src="https://fakeimg.pl/50x50" alt="chat image"></a></li>
+                <li class="forum"><a href="pages/forum3.html"><img src="https://fakeimg.pl/50x50" alt="profile image"></a></li>
+                
             </ul>
         </main>
         <footer>
-            <ul>
+            <ul class="footer">
                 <li><a href="index.html"><img src="https://fakeimg.pl/30x30" alt="home image"></a></li>
                 <li><a href="pages/chat.html"><img src="https://fakeimg.pl/30x30" alt="chat image"></a></li>
                 <li><a href="pages/profile.html"><img src="https://fakeimg.pl/30x30" alt="profile image"></a></li>
