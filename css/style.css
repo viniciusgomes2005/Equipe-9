@@ -209,3 +209,21 @@ footer{
 .username-profile{
     font-size: 1.5rem;
 }
+.flex-row{
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.flex-pack{
+    display: flex;
+    flex-direction: row;
+}
+.absolute-son{
+    position: absolute;
+    align-self: center;
+    padding-top: 15.5rem;
+}
+.alumn-answers{
+    padding-top: 4rem;
+}
