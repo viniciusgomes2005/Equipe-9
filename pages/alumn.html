@@ -9,16 +9,21 @@
     </head>
     <body>
         <header>
-            <ul>
-                <li><h1>Feedbacks</h1></li>
-            </ul>
+            <a href="feedbacks.html"><img src="https://fakeimg.pl/30x30" alt="arrow image"></a></li>
+            <h1>Feedbacks</h1></li>
+            <a href="filtro.html"><img src="https://fakeimg.pl/30x30" alt="arrow image"></a>
         </header>
-        <main>
-            <section>
-                <img src="https://fakeimg.pl/60x60" alt="user image">
-                <h2>Usuário</h2>
-            </section>
-            <p>Sugestões</p>
+        <main class="alumn-main">
+            <ul class="user-box2">
+                <li><img src="https://fakeimg.pl/100x100" alt="pearson image" class="pearson-icon"> </li>
+                <li>
+                    <ul class="column-box">
+                        <li><h3 class="username-profile">Nome do Aluno</h3></li>
+                        <li class="userclass-absolute"><p class="gray-text">Turma - Instituição</p></li>
+                    </ul>
+                </li>
+            </ul>
+            <p class="alumn-feedback">Feedback do aluno...</p>
             <ul>
                 <li><img src="https://fakeimg.pl/10x10" alt="icon image">
                     <p>X</p>
@@ -26,10 +31,10 @@
                 <li><img src="https://fakeimg.pl/10x10" alt="icon image"></li>
             </ul>
             <p>Data</p>
-            <h2>Respostas:</h2>
+            <h2 class="alumn-answers">Respostas:</h2>
         </main>
         <footer>
-            <input type="text" id="answer" name="answer" placeholder="Insira sua resposta">
+            <input type="text" id="answer" name="answer" placeholder="Insira sua resposta" class="answer-input">
         </footer>
     </body>
 </html>

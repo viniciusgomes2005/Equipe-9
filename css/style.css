@@ -110,7 +110,7 @@ footer{
     justify-content: space-around;
     align-items: center;
 }
-.user-box{
+.user-box, .user-box2{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -137,6 +137,7 @@ footer{
     flex-direction: column;
     gap: 1.5rem;
     padding-left: 15%;
+    padding-bottom: 1rem;
 }
 .filter-box{
     display: flex;
@@ -162,8 +163,49 @@ footer{
     opacity: 1;
     background-color: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.6);
+    margin-top: -8rem;
 }
 .button{
     text-decoration: none;
     color:black;
+}
+.answer-input{
+    width: 12rem;
+    height: 2rem;
+    border-radius: 0.7rem;
+    outline: 0;
+    box-sizing: border-box;
+}
+.user-box2{
+    border:none;
+    gap:2rem;
+    padding-left: 5%;
+    width: 100%;
+}
+.pearson-icon{
+    margin-top: -1rem;
+    border-radius: 50%;
+}
+.alumn-main{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.alumn-feedback{
+    position: absolute;
+    align-self: center;
+    padding-top: 5.5rem;
+}
+.column-box{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    gap: 0.5rem;
+}
+.gray-text{
+    color:gray;
+}
+.username-profile{
+    font-size: 1.5rem;
 }
