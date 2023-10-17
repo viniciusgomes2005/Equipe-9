@@ -1,0 +1,233 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    background-color: gray;
+    position: fixed;
+    z-index: 1;
+}
+header > h1{
+    font-size: 2.5rem;
+    color: whitesmoke;
+}
+html{
+    font-family: "Inter",sans-serif;
+    width: 100%;
+    height: 100%;
+}
+main{
+    padding-top: 6rem;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 3.2rem;
+    position: relative;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+    width: 100%;
+    justify-content: center;
+
+}
+.flex-box{
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    border-color: black;
+    border-style: solid;
+    border-width: 0.1rem;
+}
+.flex-box >h2{
+    padding-top:0.3rem;
+    font-size: 0.9rem;
+    position: relative;
+    align-self: center;
+}
+.flex-box >p{
+    font-size: 0.65rem;
+    margin-left: 0.25rem;
+    margin-top: 0.4rem;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+figure{
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:0.5rem
+}
+.foruntitle{
+    font-size: 2rem;
+}
+.foruns{
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow-x: scroll;
+}
+.arrowbutton{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.forum{
+    width: 6rem;
+    height: 6rem;
+    border-width: 0.1rem;
+    border-color: black;
+    border-style: solid;
+    border-radius: 0.5rem;
+}
+footer{
+    width: 100%;
+    height: 3rem;
+    background-color: gray;
+    position:fixed;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer{
+    width: 100%;
+    height: 3rem;
+    background-color: gray;
+    position:fixed;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.user-box, .user-box2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+    border:solid;
+    height: 3.8rem;
+    width: 12rem;
+    border-color: black;
+    border-radius: 0.45rem;
+}
+.comment{
+    position: absolute;
+    align-self: flex-end;
+}
+.feedback-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    gap: 2rem;
+}
+.filter-flex-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-left: 15%;
+    padding-bottom: 1rem;
+}
+.filter-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 0.8rem;
+}
+.institution-name{
+    font-size: larger;
+}   
+.apply-button{
+    outline: none;
+    text-decoration: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 3rem;
+    width: 8rem;
+    opacity: 1;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    margin-top: -8rem;
+}
+.button{
+    text-decoration: none;
+    color:black;
+}
+.answer-input{
+    width: 12rem;
+    height: 2rem;
+    border-radius: 0.7rem;
+    outline: 0;
+    box-sizing: border-box;
+}
+.user-box2{
+    border:none;
+    gap:2rem;
+    padding-left: 5%;
+    width: 100%;
+}
+.pearson-icon{
+    margin-top: -1rem;
+    border-radius: 50%;
+}
+.alumn-main{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.alumn-feedback{
+    position: absolute;
+    align-self: center;
+    padding-top: 5.5rem;
+}
+.column-box{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    gap: 0.5rem;
+}
+.gray-text{
+    color:gray;
+}
+.username-profile{
+    font-size: 1.5rem;
+}
+.flex-row{
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.flex-pack{
+    display: flex;
+    flex-direction: row;
+}
+.absolute-son{
+    position: absolute;
+    align-self: center;
+    padding-top: 15.5rem;
+}
+.alumn-answers{
+    padding-top: 4rem;
+}
+.hyperlink{
+    text-decoration: none;
+    color:black;
+}
