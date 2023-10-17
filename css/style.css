@@ -267,3 +267,18 @@ footer{
 .prof-profile{
     padding-left: -3;
 }
+.descrição{
+    font-size: 0.9rem;
+    color:  dark gray;
+}
+.videos{
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+}
+.margin{
+    margin:0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
