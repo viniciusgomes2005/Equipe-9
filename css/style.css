@@ -381,3 +381,14 @@ footer{
 .forum-add{
     padding-bottom: 0;
 }
+.exercises{
+    padding-top: 1rem;
+}
+.exercises-texts{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.exercise-text{
+    font-size: 0.9rem;
+}
