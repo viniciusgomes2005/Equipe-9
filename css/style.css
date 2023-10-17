@@ -33,6 +33,12 @@ main{
     justify-content: center;
 
 }
+.all-foruns-container{
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
 .flex-box{
     width: 8rem;
     height: 8rem;
@@ -317,6 +323,7 @@ footer{
 }
 .forun-main{
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
 }
@@ -327,4 +334,50 @@ footer{
 .forun-input{
     width: 13rem;
     padding-left: 0.25rem;
+}
+.recently-posted{
+    position: absolute;
+    align-self: start;
+    padding-top: 3rem;
+    padding-left: 1rem;
+    font-size: 1rem;
+    color: gray ;
+}
+.forun-box{
+    border: solid;
+    border-color: black;
+    width: 6.5rem;
+    height: 6.5rem;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.forun-container{
+    display: flex;
+    flex-direction: row;
+    gap:1.5rem;
+}
+.forum-title-padding{
+    padding-top: 0.5rem;
+    padding-bottom: 1.8rem;
+}
+.forum-subject-position{
+    position: absolute;
+    align-self: flex-start;
+    padding-left: 0.5rem;
+    padding-top: 1.8rem;
+}
+.exception-box{
+    border-color: #ffffff;
+}
+.add-forum{
+    font-size: 5em;
+    margin-top: -0.2rem;
+}
+.forum-add{
+    padding-bottom: 0;
 }
