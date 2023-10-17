@@ -252,3 +252,14 @@ footer{
     display: flex;
     flex-direction: column;
 }
+.videos{
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+}
+.margin{
+    margin:0.5rem
+}
+.MARGIN{
+    margin: 1rem
+}
