@@ -241,3 +241,14 @@ footer{
     flex-direction: row;
     justify-content: center;
 }
+.perfil{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    margin: 1rem;
+    height: 3rem;
+}
+.nome_descri{
+    display: flex;
+    flex-direction: column;
+}
