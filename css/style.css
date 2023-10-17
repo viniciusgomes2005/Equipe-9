@@ -241,6 +241,11 @@ footer{
     flex-direction: row;
     justify-content: center;
 }
+.header_pesquisa2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 .perfil{
     display: flex;
     flex-direction: row;
@@ -251,6 +256,12 @@ footer{
 .nome_descri{
     display: flex;
     flex-direction: column;
+    margin-left: 1rem;
+}
+.nome_descri2{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
 }
 .videos{
     display: flex;
@@ -258,8 +269,26 @@ footer{
     overflow: scroll;
 }
 .margin{
-    margin:0.5rem
+    margin:0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .MARGIN{
     margin: 1rem
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.border{
+    border: 2px solid black;
+    margin: 1rem;
+}
+.nomefonte{
+    font-size: 1.4rem;
+}
+.descrição{
+    font-size: 0.9rem;
+    color:  dark gray;
 }
