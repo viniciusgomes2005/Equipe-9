@@ -231,3 +231,36 @@ footer{
     text-decoration: none;
     color:black;
 }
+.professor-list-header{
+    position: relative;
+}
+.professor-title{
+    position: absolute;
+    justify-self: center;
+}
+.professor-back-icon{
+    position: absolute;
+    justify-self: flex-end;
+    
+}
+.mask-30x30{
+    background-color: gray;
+    width: 1rem;
+    height: 1rem;
+}
+.professor-name{
+    padding-left: 0.5rem;
+    padding-top: 0.2rem;
+    font-size: 1rem;
+}
+.professor-photo{
+    border-radius: 50%;
+}
+.professor-description{
+    position: absolute;
+    align-self: flex-end;
+    padding-bottom: 1rem;
+    justify-self: flex-end;
+    padding-left: 2.5rem;
+    font-size: small;
+}
