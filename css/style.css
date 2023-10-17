@@ -231,3 +231,13 @@ footer{
     text-decoration: none;
     color:black;
 }
+.barra_de_pesquisa{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.header_pesquisa{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
