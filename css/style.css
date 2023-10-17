@@ -146,6 +146,18 @@ footer{
     gap: 1rem;
     padding-left: 0.8rem;
 }
+.column-container{
+    padding-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.row-box{
+    display: flex;
+    flex-direction: row;
+    gap:0.5rem;
+    align-items: center;
+}
 .institution-name{
     font-size: larger;
 }   
@@ -275,10 +287,28 @@ footer{
     display: flex;
     flex-direction: row;
     overflow: scroll;
+    padding-top: 0.5rem;
 }
 .margin{
     margin:0.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.padding-list{
+    padding-left: 1rem;
+}
+.bold-text{
+    font-size: larger;
+}
+.teaching-method{
+    padding-left: 10%;
+    padding-top: 3rem;
+}
+.padding-top{
+    padding-top: 1.5rem;
+}
+.user-box-absolute{
+    margin-left: 20%;
+    margin-top: 0.5rem;
 }
