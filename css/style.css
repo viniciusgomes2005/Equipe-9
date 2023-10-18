@@ -400,3 +400,7 @@ footer{
 .exercise-text{
     font-size: 0.9rem;
 }
+.input-button{
+    height: 1rem;
+    width: 1rem;
+}
