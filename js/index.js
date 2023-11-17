@@ -13,12 +13,12 @@ function alumnList(){
     e=document.querySelector('.listadealunos');
     students.forEach(element =>{
         const aluno = document.createElement('li');
-        const alunBody = createStudentBox(element.name,element.feedback);
+        const alunBody = createStudentBox(element,element.name,element.feedback);
         aluno.appendChild(alunBody);
         e.appendChild(aluno);
     });
 };
-function createStudentBox(name,feedback) {
+function createStudentBox(student,name,feedback) {
     const studentBox = document.createElement('ul');
     studentBox.classList.add('user-box');
     const photoLi = document.createElement('li');
@@ -38,6 +38,9 @@ function createStudentBox(name,feedback) {
     suggestionLi.appendChild(userSuggestion);
     suggestionLi.classList.add('comment');
     studentBox.appendChild(suggestionLi);
+    studentBox.onclick()=()=>{
+        localStorage.setItem(student);
+    };
     return studentBox;
 };
 function createProfBox(name,description) {
@@ -64,3 +67,7 @@ function createProfBox(name,description) {
     userBox.appendChild(descriptionLi);
     return userBox;
 };
+function alumnPage(element){
+    e = element.querySelector('h3');
+    e.textContent=element.name;
+}
