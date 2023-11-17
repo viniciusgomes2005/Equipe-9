@@ -4,7 +4,7 @@ function professorList(){
     e=document.querySelector('.listadeprofessores');
     professors.forEach(element => {
         const professor = document.createElement('li');
-        const profBody = createProfBox(element.name,element.description);
+        const profBody = createProfBox(element,element.name,element.description);
         professor.appendChild(profBody);
         e.appendChild(professor);
     });
@@ -43,7 +43,7 @@ function createStudentBox(student,name,feedback) {
     };
     return studentBox;
 };
-function createProfBox(name,description) {
+function createProfBox(professor,name,description) {
     const userBox = document.createElement('ul');
     userBox.classList.add('user-box');
     const photoLi = document.createElement('li');
@@ -65,6 +65,9 @@ function createProfBox(name,description) {
     descriptionLi.appendChild(professorDescription);
     descriptionLi.classList.add('professor-description');
     userBox.appendChild(descriptionLi);
+    userBox.onclick()=()=>{
+        localStorage.setItem('professor',professor);
+    };
     return userBox;
 };
 function alumnPage(){
@@ -75,4 +78,11 @@ function alumnPage(){
     i.textContent = Object.keys(element.alumnClass)[0].concat(' : ', element.alumnClass[Object.keys(element.alumnClass)[0]]);
     o=document.querySelector('alumn-feedback');
     o.textContent=element.feedback;
+}
+function profPage(){
+    const element =localStorage.getItem('professor');
+    e = document.querySelector('username-profile');
+    e.textContent=element.name;
+    i=document.querySelector('grey-text');
+    i.textContent = element.description;
 }
