@@ -39,7 +39,7 @@ function createStudentBox(student,name,feedback) {
     suggestionLi.classList.add('comment');
     studentBox.appendChild(suggestionLi);
     studentBox.onclick()=()=>{
-        localStorage.setItem(student);
+        localStorage.setItem('student',student);
     };
     return studentBox;
 };
@@ -67,7 +67,12 @@ function createProfBox(name,description) {
     userBox.appendChild(descriptionLi);
     return userBox;
 };
-function alumnPage(element){
-    e = element.querySelector('h3');
+function alumnPage(){
+    const element =localStorage.getItem('student')
+    e = document.querySelector('username-profile');
     e.textContent=element.name;
+    i=document.querySelector('grey-text');
+    i.textContent = Object.keys(element.alumnClass)[0].concat(' : ', element.alumnClass[Object.keys(element.alumnClass)[0]]);
+    o=document.querySelector('alumn-feedback');
+    o.textContent=element.feedback;
 }
