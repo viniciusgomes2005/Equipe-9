@@ -1,17 +1,24 @@
-import {professors,students} from './userClass';
-
+import {professors,students} from './userClass.js';
+console.log(professors);
 function professorList(){
-    e=document.querySelector('.listadeprofessores');
+    const e=document.querySelector('.listadeprofessores');
     professors.forEach(element => {
+        if (!element){
+            return false;
+        };
         const professor = document.createElement('li');
         const profBody = createProfBox(element,element.name,element.description);
         professor.appendChild(profBody);
+        console.log(professor);
         e.appendChild(professor);
     });
 };
 function alumnList(){
-    e=document.querySelector('.listadealunos');
+    const e=document.querySelector('.listadealunos');
     students.forEach(element =>{
+        if (!element){
+            return false;
+        };
         const aluno = document.createElement('li');
         const alunBody = createStudentBox(element,element.name,element.feedback);
         aluno.appendChild(alunBody);
@@ -38,9 +45,9 @@ function createStudentBox(student,name,feedback) {
     suggestionLi.appendChild(userSuggestion);
     suggestionLi.classList.add('comment');
     studentBox.appendChild(suggestionLi);
-    studentBox.onclick()=()=>{
-        localStorage.setItem('student',student);
-    };
+    studentBox.addEventListener('click',function(){
+        localStorage.setItem('student',JSON.stringify(student));
+    });
     return studentBox;
 };
 function createProfBox(professor,name,description) {
@@ -65,24 +72,30 @@ function createProfBox(professor,name,description) {
     descriptionLi.appendChild(professorDescription);
     descriptionLi.classList.add('professor-description');
     userBox.appendChild(descriptionLi);
-    userBox.onclick()=()=>{
-        localStorage.setItem('professor',professor);
-    };
+    userBox.addEventListener('click',function(){
+        localStorage.setItem('professor',JSON.stringify(professor));
+        window.location.href = '../pages/professor.html';
+    });
     return userBox;
+    
 };
 function alumnPage(){
     const element =localStorage.getItem('student')
-    e = document.querySelector('username-profile');
+    const e = document.querySelector('.username-profile');
     e.textContent=element.name;
-    i=document.querySelector('grey-text');
+    i=document.querySelector('.grey-text');
     i.textContent = Object.keys(element.alumnClass)[0].concat(' : ', element.alumnClass[Object.keys(element.alumnClass)[0]]);
-    o=document.querySelector('alumn-feedback');
+    o=document.querySelector('.alumn-feedback');
     o.textContent=element.feedback;
-}
+};
 function profPage(){
     const element =localStorage.getItem('professor');
-    e = document.querySelector('username-profile');
+    console.log(element)
+    const e = document.querySelector('#prof-profile');
+    console.log(e);
     e.textContent=element.name;
-    i=document.querySelector('grey-text');
+    i=document.querySelector('.grey-text');
     i.textContent = element.description;
-}
+};
+document.addEventListener('DOMContentLoaded',professorList)
+document.addEventListener('DOMContentLoaded',profPage)

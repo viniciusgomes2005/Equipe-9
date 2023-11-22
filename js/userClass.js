@@ -9,8 +9,8 @@ class User{
     };
 };
 
-const students = [];
-const professors = [];
+export const students = [];
+export const professors = [];
 
 // Alunos do Insper na matéria Fismov
 students.push(
@@ -329,4 +329,3 @@ professors.push(
         professorDescription: "Com vasta experiência em Física Experimental, promovendo atividades práticas e laboratoriais.",
     })
 );
-export default {professors,students};
