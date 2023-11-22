@@ -1,6 +1,11 @@
 import {professors} from './userClass.js';
-console.log(professors);
 function professorList(){
+    const input = document.getElementById('answer');
+    input.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            applyFilter();
+        }
+    });
     const e=document.querySelector('.listadeprofessores');
     professors.forEach(element => {
         if (!element){
@@ -9,7 +14,6 @@ function professorList(){
         const professor = document.createElement('li');
         const profBody = createProfBox(element,element.name,element.description);
         professor.appendChild(profBody);
-        console.log(professor);
         e.appendChild(professor);
     });
 };
@@ -42,6 +46,26 @@ function createProfBox(professor,name,description) {
     return userBox;
     
 };
+function applyFilter() {
+    const input = document.getElementById('answer');
+    const filterText = input.value.toLowerCase(); // Convertendo para minúsculas para comparação sem distinção entre maiúsculas e minúsculas
 
+    const e = document.querySelector('.listadeprofessores');
+    e.innerHTML = ''; 
 
+    professors.forEach(element => {
+        if (element && matchesFilter(element, filterText)) {
+            const professor = document.createElement('li');
+            const profBody = createProfBox(element, element.name, element.description);
+            professor.appendChild(profBody);
+            e.appendChild(professor);
+        }
+    });
+}
+
+function matchesFilter(element, filterText) {
+    const lowerText=filterText.toLowerCase();
+    const combinedString = (element.name + ' ' + element.description).toLowerCase();
+    return combinedString.includes(lowerText);
+}
 document.addEventListener('DOMContentLoaded',professorList)
