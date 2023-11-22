@@ -1,5 +1,6 @@
 function alumnPage(){
-    const element =localStorage.getItem('student')
+    const element =localStorage.getItem('student');
+    element=JSON.parse(element);
     const e = document.querySelector('.username-profile');
     e.textContent=element.name;
     i=document.querySelector('.grey-text');

@@ -1,4 +1,4 @@
-import {professors,students} from './userClass.js';
+import {professors} from './userClass.js';
 console.log(professors);
 function professorList(){
     const e=document.querySelector('.listadeprofessores');
@@ -12,43 +12,6 @@ function professorList(){
         console.log(professor);
         e.appendChild(professor);
     });
-};
-function alumnList(){
-    const e=document.querySelector('.listadealunos');
-    students.forEach(element =>{
-        if (!element){
-            return false;
-        };
-        const aluno = document.createElement('li');
-        const alunBody = createStudentBox(element,element.name,element.feedback);
-        aluno.appendChild(alunBody);
-        e.appendChild(aluno);
-    });
-};
-function createStudentBox(student,name,feedback) {
-    const studentBox = document.createElement('ul');
-    studentBox.classList.add('user-box');
-    const photoLi = document.createElement('li');
-    const userPhoto = document.createElement('img');
-    userPhoto.src = 'https://fakeimg.pl/30x30';
-    userPhoto.alt = 'user image';
-    photoLi.appendChild(userPhoto);
-    studentBox.appendChild(photoLi);
-    const nameLi = document.createElement('li');
-    const userName = document.createElement('h3');
-    userName.textContent = name;
-    nameLi.appendChild(userName);
-    studentBox.appendChild(nameLi);
-    const suggestionLi = document.createElement('li');
-    const userSuggestion = document.createElement('p');
-    userSuggestion.textContent = feedback;
-    suggestionLi.appendChild(userSuggestion);
-    suggestionLi.classList.add('comment');
-    studentBox.appendChild(suggestionLi);
-    studentBox.addEventListener('click',function(){
-        localStorage.setItem('student',JSON.stringify(student));
-    });
-    return studentBox;
 };
 function createProfBox(professor,name,description) {
     const userBox = document.createElement('ul');
