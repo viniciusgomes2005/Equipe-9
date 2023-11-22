@@ -12,7 +12,7 @@ function professorList(){
             return false;
         };
         const professor = document.createElement('li');
-        const profBody = createProfBox(element,element.name,element.description);
+        const profBody = createProfBox(element,element.name,element.professorDescription);
         professor.appendChild(profBody);
         e.appendChild(professor);
     });
@@ -35,7 +35,7 @@ function createProfBox(professor,name,description) {
     userBox.appendChild(nameLi);
     const descriptionLi = document.createElement('li');
     const professorDescription = document.createElement('p');
-    professorDescription.textContent = description;
+    professorDescription.textContent = description.slice(0,30)+'...';
     descriptionLi.appendChild(professorDescription);
     descriptionLi.classList.add('professor-description');
     userBox.appendChild(descriptionLi);
@@ -56,7 +56,7 @@ function applyFilter() {
     professors.forEach(element => {
         if (element && matchesFilter(element, filterText)) {
             const professor = document.createElement('li');
-            const profBody = createProfBox(element, element.name, element.description);
+            const profBody = createProfBox(element, element.name, element.professorDescription);
             professor.appendChild(profBody);
             e.appendChild(professor);
         }
@@ -65,7 +65,7 @@ function applyFilter() {
 
 function matchesFilter(element, filterText) {
     const lowerText=filterText.toLowerCase();
-    const combinedString = (element.name + ' ' + element.description).toLowerCase();
+    const combinedString = (element.name + ' ' + element.professorDescription).toLowerCase();
     return combinedString.includes(lowerText);
 }
 document.addEventListener('DOMContentLoaded',professorList)

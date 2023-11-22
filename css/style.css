@@ -139,8 +139,10 @@ footer{
     border-radius: 0.45rem;
 }
 .comment{
-    position: absolute;
     align-self: flex-end;
+    position: absolute;
+    font-size: smaller;
+    color:grey;
 }
 .feedback-main{
     display: flex;
@@ -294,12 +296,10 @@ footer{
     border-radius: 50%;
 }
 .professor-description{
-    position: absolute;
     align-self: flex-end;
-    padding-bottom: 1rem;
-    justify-self: flex-end;
-    padding-left: 2.5rem;
-    font-size: small;
+    position: absolute;
+    font-size: smaller;
+    color:grey;
 }
 .prof-profile{
     padding-left: -3;

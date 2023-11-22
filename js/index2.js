@@ -16,7 +16,7 @@ function createStudentBox(student,name,feedback) {
     studentBox.appendChild(nameLi);
     const suggestionLi = document.createElement('li');
     const userSuggestion = document.createElement('p');
-    userSuggestion.textContent = feedback;
+    userSuggestion.textContent = feedback.slice(0,30)+'...';
     suggestionLi.appendChild(userSuggestion);
     suggestionLi.classList.add('comment');
     studentBox.appendChild(suggestionLi);
