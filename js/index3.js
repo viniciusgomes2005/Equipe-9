@@ -1,5 +1,5 @@
-import {students} from './userClass.js';
-console.log(students)
+var students=localStorage.getItem('filteredStudents');
+students =JSON.parse(students);
 function createStudentBox(student,name,feedback) {
     const studentBox = document.createElement('ul');
     studentBox.classList.add('user-box');
