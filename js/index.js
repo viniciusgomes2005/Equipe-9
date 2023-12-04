@@ -1,4 +1,4 @@
-import {professors} from './userClass.js';
+import {professors} from './userClass';
 function professorList(){
     const input = document.getElementById('answer');
     input.addEventListener('keydown', function(event) {
