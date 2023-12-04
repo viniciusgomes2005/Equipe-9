@@ -1,4 +1,4 @@
-import {students} from './userClass';
+import {students} from './userClass.js';
 console.log(students)
 function createStudentBox(student,name,feedback) {
     const studentBox = document.createElement('ul');
