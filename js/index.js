@@ -41,7 +41,7 @@ function createProfBox(professor,name,description) {
     userBox.appendChild(descriptionLi);
     userBox.addEventListener('click',function(){
         localStorage.setItem('professor',JSON.stringify(professor));
-        window.location.href = '../pages/professor.html';
+        window.location.href = './pages/professor.html';
     });
     return userBox;
     
