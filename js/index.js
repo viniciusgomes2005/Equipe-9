@@ -1,4 +1,4 @@
-import {professors} from './userClass.js';
+import {professors} from '../userClass.js';
 function professorList(){
     const input = document.getElementById('answer');
     input.addEventListener('keydown', function(event) {
@@ -41,7 +41,7 @@ function createProfBox(professor,name,description) {
     userBox.appendChild(descriptionLi);
     userBox.addEventListener('click',function(){
         localStorage.setItem('professor',JSON.stringify(professor));
-        window.location.href = './pages/professor.html';
+        window.location.href = '../pages/professor.html';
     });
     return userBox;
     

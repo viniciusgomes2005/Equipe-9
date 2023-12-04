@@ -1,4 +1,4 @@
-import {students} from './userClass.js';
+import {students} from '../userClass.js';
 console.log(students)
 function createStudentBox(student,name,feedback) {
     const studentBox = document.createElement('ul');
@@ -22,7 +22,7 @@ function createStudentBox(student,name,feedback) {
     studentBox.appendChild(suggestionLi);
     studentBox.addEventListener('click',function(){
         localStorage.setItem('student',JSON.stringify(student));
-        window.location.href = './pages/alumn.html';
+        window.location.href = '../pages/alumn.html';
     });
     return studentBox;
 };

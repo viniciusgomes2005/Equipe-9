@@ -22,7 +22,7 @@ function createStudentBox(student,name,feedback) {
     studentBox.appendChild(suggestionLi);
     studentBox.addEventListener('click',function(){
         localStorage.setItem('student',JSON.stringify(student));
-        window.location.href = './pages/alumn.html';
+        window.location.href = '../pages/alumn.html';
     });
     return studentBox;
 };
