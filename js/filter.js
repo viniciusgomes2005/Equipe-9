@@ -1,4 +1,4 @@
-import { students } from './userClass';
+import { students } from './userClass.js';
 function filterbySubject({ subject="default", institution='default' }) {
     let filteredStudents = students;
   
